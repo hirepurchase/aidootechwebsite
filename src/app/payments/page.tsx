@@ -6,7 +6,6 @@ import { Section } from "@/components/Section";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Payment Methods",
   description:
     "How to pay Aidoo Tech Solutions: card via Paystack, Mobile Money, bank transfer or cash in-store. All amounts are charged in Ghana Cedis.",
 };

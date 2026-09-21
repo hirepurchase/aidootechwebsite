@@ -4,7 +4,6 @@ import { LegalPage } from "@/components/LegalPage";
 import { addressLine, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Terms of Service",
   description:
     "The terms governing purchases, hire purchase agreements and use of the Aidoo Tech Solutions website.",
 };

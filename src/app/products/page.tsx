@@ -10,7 +10,6 @@ import { PHONE_BRANDS, productCategories } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Phones & Accessories",
   description:
     "Smartphones, tablets and phone accessories stocked at our Circle, Accra showroom — available for cash or on hire purchase.",
 };

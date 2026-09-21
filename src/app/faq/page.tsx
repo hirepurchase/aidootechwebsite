@@ -6,7 +6,6 @@ import { faqGroups } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions",
   description:
     "Answers to common questions about buying phones from Aidoo Tech Solutions, hire purchase terms, payments, warranty and support.",
 };

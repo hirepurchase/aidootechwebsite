@@ -6,7 +6,6 @@ import { Section } from "@/components/Section";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Agents",
   description:
     "Aidoo Tech Solutions works through agents across Ghana who sell devices, register customers and collect instalments locally.",
 };

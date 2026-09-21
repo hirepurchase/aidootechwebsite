@@ -4,7 +4,6 @@ import { LegalPage } from "@/components/LegalPage";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Delivery Policy",
   description:
     "How Aidoo Tech Solutions delivers devices across Ghana, what it costs, how long it takes and what identification is required on handover.",
 };

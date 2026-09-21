@@ -4,7 +4,6 @@ import { LegalPage } from "@/components/LegalPage";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Refund & Cancellation Policy",
   description:
     "When Aidoo Tech Solutions refunds, replaces or repairs a device, how to cancel an order or hire purchase agreement, and how long refunds take.",
 };

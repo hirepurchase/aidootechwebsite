@@ -4,7 +4,6 @@ import { LegalPage } from "@/components/LegalPage";
 import { addressLine, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
   description:
     "What personal information Aidoo Tech Solutions collects, why we collect it, who we share it with and what rights you have over it.",
 };

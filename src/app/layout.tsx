@@ -20,15 +20,13 @@ const sourceSerif = Source_Serif_4({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: {
-    default: `${site.name} — Phones, Accessories & Device Financing in Ghana`,
-    template: `%s · ${site.name}`,
-  },
+  /** Every page carries the same title. */
+  title: site.shortName,
   description: site.description,
   openGraph: {
     type: "website",
     siteName: site.name,
-    title: `${site.name} — Phones, Accessories & Device Financing`,
+    title: site.shortName,
     description: site.description,
     locale: "en_GH",
   },

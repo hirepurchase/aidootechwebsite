@@ -7,7 +7,6 @@ import { Section } from "@/components/Section";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About the business",
   description:
     "Who Aidoo Tech Solutions is, what we sell, where we trade and how our hire purchase business is run.",
 };

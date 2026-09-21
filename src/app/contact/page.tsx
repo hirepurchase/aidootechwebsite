@@ -6,7 +6,6 @@ import { Section } from "@/components/Section";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact & Store",
   description:
     "Visit the Aidoo Tech Solutions showroom at Circle, Accra, or reach us by phone, WhatsApp or email.",
 };

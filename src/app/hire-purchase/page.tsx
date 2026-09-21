@@ -7,7 +7,6 @@ import { hirePurchaseSteps } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Hire Purchase",
   description:
     "How device financing works at Aidoo Tech Solutions: deposit, agreed instalments, written terms, and ownership on final payment.",
 };

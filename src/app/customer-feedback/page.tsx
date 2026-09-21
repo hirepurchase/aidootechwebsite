@@ -9,7 +9,6 @@ import { SAMPLE_REVIEWS, testimonials } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Customer Feedback",
   description:
     "What Aidoo Tech Solutions customers say about buying phones and paying on hire purchase — and how to give us feedback or raise a complaint.",
 };
