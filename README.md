@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aidoo Tech Solutions — company website
 
-## Getting Started
+Marketing and compliance website for Aidoo Tech Solutions: retail of phones,
+tablets and accessories at Circle, Accra, plus device financing (hire purchase)
+through a nationwide agent network.
 
-First, run the development server:
+Built for submission to **Paystack** as part of business verification, so it
+carries the pages a payment processor expects to see: a real About page,
+published FAQs, customer feedback and complaints route, Terms of Service,
+Refund & Cancellation Policy, Delivery Policy and Privacy Policy.
+
+## Stack
+
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4.
+Every page is statically prerendered — no database, no API, no runtime secrets.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev     # http://localhost:3000
+npm run build   # production build
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Before you go live
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Business details live in one file, `src/lib/site.ts` — edit it once and the
+header, footer, contact page, structured data and all four policy documents
+update together. Phone numbers, WhatsApp and the email address are already in.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Details the business has not supplied yet are **absent rather than shown as
+placeholders**: the pages are written to omit them cleanly, so nothing reading
+"TODO" is ever displayed to a visitor. [`STILL-NEEDED.md`](STILL-NEEDED.md)
+lists what is outstanding, what it affects, and which items hold up the
+Paystack submission.
 
-## Learn More
+## Brand assets
 
-To learn more about Next.js, take a look at the following resources:
+`public/` holds the blue Aidoo Tech logo (sourced from `hirepurchase/frontend/icon1.png`),
+processed for web:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| File | Use |
+| --- | --- |
+| `logo-mark.png` | The "A" mark, transparent background — used in the header and footer |
+| `logo-full.png` | Full lockup with wordmark, transparent background |
+| `icon-192.png`, `icon-512.png`, `apple-icon.png` | App and home-screen icons |
+| `src/app/favicon.ico` | Browser tab icon |
+| `hero/slide-1…5.webp` | Home page hero slider images |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The palette in `src/app/globals.css` is built on the brand blue sampled from the
+logo, **#013b9a**, over cool near-white paper. The blue is reserved for the
+wordmark, links, eyebrows and primary buttons rather than spread across large
+fields. Headings are Source Serif 4, body text is Inter.
 
-## Deploy on Vercel
+## Page map
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Route | Purpose |
+| --- | --- |
+| `/` | Home — hero slider, what we sell, how financing works |
+| `/about` | The business, how it operates, registration details |
+| `/products` | Phones, accessories, tablets |
+| `/hire-purchase` | Device financing: process, eligibility, obligations |
+| `/agents` | Agent network, dealing with agents safely, applying |
+| `/customer-feedback` | Reviews and the complaints procedure |
+| `/faq` | 15 questions across buying, payments and support |
+| `/contact` | Showroom address, hours, direct lines |
+| `/payments` | Accepted channels, fraud warnings, receipts |
+| `/terms` | Terms of Service |
+| `/refund-policy` | Refund & Cancellation Policy |
+| `/delivery` | Delivery Policy |
+| `/privacy` | Privacy Policy |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`/sitemap.xml` and `/robots.txt` are generated from `src/lib/site.ts`.
