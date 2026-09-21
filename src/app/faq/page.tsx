@@ -75,7 +75,7 @@ export default function FaqPage() {
               Still not sure?
             </h2>
             <p className="mt-2 max-w-md text-[0.9375rem] text-ink-soft">
-              Call {site.contact.phone} or come into the {site.address.city} showroom and
+              Call {site.contact.phone} or come into either showroom and
               ask us directly.
             </p>
           </div>

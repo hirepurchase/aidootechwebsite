@@ -12,7 +12,7 @@ export const site = {
   legalName: "Aidoo Tech Solutions",
   tagline: "Phones, accessories and device financing you can trust.",
   description:
-    "Aidoo Tech Solutions sells smartphones and accessories in-store at Circle, Accra, and makes them affordable nationwide through structured hire purchase — a deposit today, the balance in agreed instalments.",
+    "Aidoo Tech Solutions sells smartphones and accessories from its showrooms at Kwabenya and Circle in Accra, and makes them affordable nationwide through structured hire purchase — a deposit today, the balance in agreed instalments.",
 
   url: "https://aidootech.com",
 
@@ -23,24 +23,29 @@ export const site = {
   },
 
   contact: {
-    phone: "+233 54 098 1488",
-    phoneHref: "tel:+233540981488",
+    phone: "+233 53 978 8785",
+    phoneHref: "tel:+233539788785",
     phoneAlt: "+233 24 887 9858",
     phoneAltHref: "tel:+233248879858",
-    whatsapp: "+233 54 098 1488",
-    whatsappHref: "https://wa.me/233540981488",
+    whatsapp: "+233 53 978 8785",
+    whatsappHref: "https://wa.me/233539788785",
     /** One inbox handles enquiries, support and agent applications. */
     email: "aidootechsolutions@gmail.com",
     supportEmail: "aidootechsolutions@gmail.com",
     salesEmail: "aidootechsolutions@gmail.com",
   },
 
-  /** Street and GhanaPost address still to be supplied; both are optional
-   *  here and the pages omit them cleanly while they are empty. */
+  /** The two showrooms, in the order they are listed across the site. */
+  showrooms: ["Kwabenya", "Circle"],
+
+  /** Street addresses for each showroom are still to be supplied; the pages
+   *  omit them cleanly while they are empty. */
   address: {
     line1: "",
     line2: "",
-    city: "Circle, Accra",
+    city: "Kwabenya & Circle, Accra",
+    /** The town proper, for postal and structured-data use. */
+    locality: "Accra",
     region: "Greater Accra Region",
     country: "Ghana",
     digitalAddress: "",
@@ -67,6 +72,9 @@ export const site = {
 } as const;
 
 /** Convenience string used in footers and structured data. */
+/** "Kwabenya and Circle" — for sentences that name the shops. */
+export const showroomsLabel = site.showrooms.join(" and ");
+
 export const addressLine = [
   site.address.line1,
   site.address.line2,

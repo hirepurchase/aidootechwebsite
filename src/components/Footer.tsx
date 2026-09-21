@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "./Container";
 import { Logo } from "./Logo";
-import { navLinks, policyLinks, site } from "@/lib/site";
+import { navLinks, policyLinks, showroomsLabel, site } from "@/lib/site";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -13,7 +13,7 @@ export function Footer() {
           <div className="md:col-span-4">
             <Logo />
             <p className="mt-4 max-w-xs text-[0.875rem] leading-relaxed text-ink-soft">
-              {site.tagline} Serving customers from our {site.address.city} showroom and
+              {site.tagline} Serving customers from our {showroomsLabel} showrooms and
               through agents across {site.address.country}.
             </p>
           </div>

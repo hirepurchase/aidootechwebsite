@@ -3,11 +3,11 @@ import Link from "next/link";
 import { ImageBand } from "@/components/ImageBand";
 import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
-import { site } from "@/lib/site";
+import { showroomsLabel, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   description:
-    "Visit the Aidoo Tech Solutions showroom at Circle, Accra, or reach us by phone, WhatsApp or email.",
+    "Visit an Aidoo Tech Solutions showroom at Kwabenya or Circle in Accra, or reach us by phone, WhatsApp or email.",
 };
 
 const reasons = [
@@ -38,7 +38,7 @@ export default function ContactPage() {
     <>
       <PageHeader
         title="Visit our store or get in touch"
-        lede={`Our showroom is at ${site.address.city}. If you are outside Accra, call us and we will put you in touch with an agent in your area.`}
+        lede={`We have two showrooms in Accra, at ${showroomsLabel}. If you are outside Accra, call us and we will put you in touch with an agent in your area.`}
       />
 
       <Section>
@@ -156,10 +156,10 @@ export default function ContactPage() {
         tone="raised"
         title="Look for the Device Finance sign"
         image="/photos/storefront.webp"
-        alt="The Aidoo Tech Solutions shop front at Circle, Accra."
+        alt="An Aidoo Tech Solutions shop front in Accra."
       >
         <p>
-          The showroom is on the main strip at {site.address.city}. If you are
+          Both showrooms are in Accra — one at Kwabenya, one at Circle. If you are
           coming for the first time, call ahead and we will confirm the device
           you want is in stock before you travel.
         </p>

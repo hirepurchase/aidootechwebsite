@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 import { ImageBand } from "@/components/ImageBand";
 import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
-import { site } from "@/lib/site";
+import { showroomsLabel, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   description:
@@ -35,7 +35,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         title="About Aidoo Tech Solutions"
-        lede={`${site.legalName} is a retailer of smartphones, tablets and accessories based at ${site.address.city}. Alongside straightforward cash sales, we operate a hire purchase business that lets customers take a device home on a deposit and pay the balance over an agreed term.`}
+        lede={`${site.legalName} is a retailer of smartphones, tablets and accessories, with showrooms at ${showroomsLabel} in Accra. Alongside straightforward cash sales, we operate a hire purchase business that lets customers take a device home on a deposit and pay the balance over an agreed term.`}
       />
 
       <Section>
@@ -48,7 +48,7 @@ export default function AboutPage() {
               <p>
                 The business has two halves that support each other. The first is retail:
                 we buy smartphones, tablets and accessories and sell them over the counter
-                at our {site.address.city} showroom, for cash or card, at the marked price.
+                at our {showroomsLabel} showrooms, for cash or card, at the marked price.
               </p>
               <p>
                 The second is device financing. A large number of our customers can afford
@@ -78,7 +78,7 @@ export default function AboutPage() {
                   ["Trading name", site.name],
                   ["Registered name", site.legalName],
                   ["Sector", "Retail of mobile phones & consumer electronics; consumer device financing"],
-                  ["Showroom", `${site.address.city}, ${site.address.country}`],
+                  ["Showrooms", `${showroomsLabel} — Accra, ${site.address.country}`],
                   ["Coverage", `Agent network across ${site.address.country}`],
                   ["Currency", `Ghana Cedi (${site.payments.currency})`],
                 ].map(([term, detail]) => (
@@ -99,7 +99,7 @@ export default function AboutPage() {
         tone="raised"
         title="The people behind the counter"
         image="/photos/team.webp"
-        alt="The Aidoo Tech Solutions team outside the Circle, Accra showroom."
+        alt="The Aidoo Tech Solutions team outside one of the Accra showrooms."
       >
         <p>
           Hire purchase only works when the customer can find the same people

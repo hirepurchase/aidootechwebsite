@@ -49,7 +49,7 @@ export default function RootLayout({
     address: {
       "@type": "PostalAddress",
       streetAddress: [site.address.line1, site.address.line2].join(", "),
-      addressLocality: site.address.city,
+      addressLocality: site.address.locality,
       addressRegion: site.address.region,
       addressCountry: "GH",
     },

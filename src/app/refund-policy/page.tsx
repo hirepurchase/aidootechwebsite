@@ -172,7 +172,7 @@ export default function RefundPolicyPage() {
       <ol>
         <li>
           Contact us at {site.contact.supportEmail} or {site.contact.phone}, or visit the{" "}
-          {site.address.city} showroom.
+          Kwabenya or Circle showroom.
         </li>
         <li>
           Quote your receipt number or agreement reference and describe the problem.

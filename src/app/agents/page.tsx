@@ -3,7 +3,7 @@ import { AgentApplicationForm } from "@/components/AgentApplicationForm";
 import { ImageBand } from "@/components/ImageBand";
 import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
-import { site } from "@/lib/site";
+import { showroomsLabel, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   description:
@@ -42,7 +42,7 @@ export default function AgentsPage() {
     <>
       <PageHeader
         title="Agents in every region of Ghana."
-        lede={`We trade from a single showroom at ${site.address.city}, but our customers are everywhere. Agents across ${site.address.country} sell our devices, register customers and collect instalments in their own communities.`}
+        lede={`We trade from two showrooms in Accra — ${showroomsLabel} — but our customers are everywhere. Agents across ${site.address.country} sell our devices, register customers and collect instalments in their own communities.`}
       />
 
       <Section title="What our agents do">

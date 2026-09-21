@@ -4,7 +4,6 @@ import { ImageBand } from "@/components/ImageBand";
 import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
 import { hirePurchaseSteps } from "@/lib/content";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   description:
@@ -170,7 +169,7 @@ export default function HirePurchasePage() {
               Ready to start, or want a quote first?
             </h2>
             <p className="mt-2 max-w-lg text-[0.9375rem] text-ink-soft">
-              Visit the {site.address.city} showroom or speak to an agent in your region.
+              Visit either showroom or speak to an agent in your region.
               We will work out the deposit and instalments with you before anything is signed.
             </p>
           </div>

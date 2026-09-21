@@ -26,7 +26,7 @@ export function Header() {
       <div className="hidden border-b border-rule/70 bg-paper-sunken md:block">
         <Container className="flex h-9 items-center justify-between text-[0.75rem] text-ink-soft">
           <p>
-            Showroom at {site.address.city} · Agents in every region of {site.address.country}
+            Showrooms at {site.showrooms.join(" & ")} · Agents in every region of {site.address.country}
           </p>
           <p className="flex items-center gap-5">
             <a className="hover:text-accent" href={site.contact.phoneHref}>

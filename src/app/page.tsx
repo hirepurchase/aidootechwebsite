@@ -64,7 +64,7 @@ export default function HomePage() {
           {/* Where to buy, and how to pay */}
           <div className="mt-14 grid gap-6 sm:grid-cols-3">
             {[
-              ["In-store", "Circle, Accra showroom"],
+              ["In-store", "Kwabenya & Circle showrooms"],
               ["Nationwide", "Agents in every region"],
               ["Payments", "MoMo, card, transfer, cash"],
             ].map(([title, detail]) => (

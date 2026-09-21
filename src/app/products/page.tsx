@@ -7,11 +7,11 @@ import { PageHeader } from "@/components/PageHeader";
 import { ProductCard } from "@/components/ProductCard";
 import { Section } from "@/components/Section";
 import { PHONE_BRANDS, productCategories } from "@/lib/content";
-import { site } from "@/lib/site";
+import { showroomsLabel } from "@/lib/site";
 
 export const metadata: Metadata = {
   description:
-    "Smartphones, tablets and phone accessories stocked at our Circle, Accra showroom — available for cash or on hire purchase.",
+    "Smartphones, tablets and phone accessories stocked at our Kwabenya and Circle showrooms in Accra — available for cash or on hire purchase.",
 };
 
 export default function ProductsPage() {
@@ -96,7 +96,7 @@ export default function ProductsPage() {
                 Come and handle the phone before you buy it.
               </h2>
               <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink-soft">
-                Our stock sits on the shelf at {site.address.city}, not only in a
+                Our stock sits on the shelf at {showroomsLabel}, not only in a
                 catalogue. Pick it up, check the screen, compare two models side by
                 side — then decide whether to pay cash or spread it.
               </p>
@@ -171,7 +171,7 @@ export default function ProductsPage() {
             </h2>
             <p className="mt-2 max-w-md text-[0.9375rem] text-ink-soft">
               Tell us what you want and we will confirm availability at the{" "}
-              {site.address.city} showroom or through an agent near you.
+              showrooms or through an agent near you.
             </p>
           </div>
           <Link
