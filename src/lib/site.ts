@@ -100,6 +100,7 @@ export const addressLine = [
 export const navLinks = [
   { href: "/about", label: "About" },
   { href: "/products", label: "Phones & Accessories" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/hire-purchase", label: "Hire Purchase" },
   { href: "/agents", label: "Agents" },
   { href: "/customer-feedback", label: "Customer Feedback" },

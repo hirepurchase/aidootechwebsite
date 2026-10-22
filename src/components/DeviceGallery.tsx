@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "./Container";
 
 /**
@@ -51,6 +52,12 @@ export function DeviceGallery() {
             Photographs taken in our own showroom, not a catalogue. Stock moves, so call
             ahead if you want a particular model held for you.
           </p>
+          <Link
+            href="/gallery"
+            className="mt-5 inline-block text-[0.875rem] font-medium text-accent underline underline-offset-4 hover:text-accent-deep"
+          >
+            See the full gallery
+          </Link>
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3">

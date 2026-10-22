@@ -292,6 +292,72 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
+/* ─────────────────────────── Stock gallery ──────────────────────────
+   Photographs of the real showrooms, shown on /gallery. Update the date
+   whenever the photographs are replaced — the page states it, and a stale
+   date on a stock gallery is worse than none.
+--------------------------------------------------------------------- */
+export const STOCK_PHOTOS_TAKEN = "October 2026";
+
+export type StockPhoto = {
+  src: string;
+  alt: string;
+  caption: string;
+  detail?: string;
+  wide?: boolean;
+};
+
+export const stockPhotos: StockPhoto[] = [
+  {
+    src: "/gallery/full/showroom.webp",
+    alt: "Inside the Aidoo Tech showroom: staff serving customers at the counter, phones and accessories on the walls.",
+    caption: "Inside the showroom on an ordinary trading day.",
+    wide: true,
+  },
+  {
+    src: "/gallery/full/samsung-case.webp",
+    alt: "Samsung Galaxy Tab A11, S25 Ultra, A57 5G and A37 5G boxes in the display case.",
+    caption: "Samsung display case",
+    detail: "Galaxy Tab A11 and A11+ 5G, S25 Ultra, S25+, A57 5G, A37 5G.",
+  },
+  {
+    src: "/gallery/full/samsung-display.webp",
+    alt: "A second Samsung display case of Galaxy tablets and A series handsets.",
+    caption: "Samsung, second case",
+    detail: "More Galaxy Tab stock, A37 5G and A57 5G.",
+  },
+  {
+    src: "/gallery/full/infinix-shelf.webp",
+    alt: "Infinix HOT 70, NOTE Edge and GT 50 Pro boxes, with Villaon handsets above.",
+    caption: "Infinix shelf",
+    detail: "HOT 70, NOTE Edge, GT 50 Pro, with Villaon stock on the rack above.",
+  },
+  {
+    src: "/gallery/full/tecno-shelf.webp",
+    alt: "Tecno Camon 50, Spark 50 and Camon Slim boxes stacked on the shelf.",
+    caption: "Tecno shelf",
+    detail: "Camon 50, Spark 50 and Camon Slim, with itel it2160 below.",
+  },
+  {
+    src: "/gallery/full/main-wall.webp",
+    alt: "The main wall: Samsung Galaxy A series, Tecno Spark and Camon, Nokia and itel handsets.",
+    caption: "The main wall",
+    detail: "Galaxy A07, A07s, A08 and A17, Tecno Spark 50 and Camon 50, Nokia 105, itel it2160.",
+  },
+  {
+    src: "/gallery/full/galaxy-a17.webp",
+    alt: "A carton of sealed Samsung Galaxy A17 handsets, each box carrying a 24-month warranty seal.",
+    caption: "Sealed and warranted",
+    detail: "Galaxy A17 in the carton, each with a 24-month warranty seal.",
+  },
+  {
+    src: "/gallery/full/sealed-stock.webp",
+    alt: "Sealed Samsung handsets in a carton, serial and IMEI labels visible on each box.",
+    caption: "In the stockroom",
+    detail: "Every unit sealed, with its IMEI label recorded before sale.",
+  },
+];
+
 /* ──────────────────────────── Hero slider ───────────────────────────
    Slides for the home page hero. Images live in `public/hero/` and were
    produced from the Aidoo Tech brand photography.

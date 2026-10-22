@@ -19,7 +19,7 @@ export default function DeliveryPage() {
       lede={`How long delivery takes, what it costs, and how devices are handed over. In short: ${site.delivery.greaterAccraShort} within Greater Accra, and ${site.delivery.otherRegions} to other regions.`}
       lastUpdated=""
     >
-      <h2>1. How long delivery takes</h2>
+      <h2 id="timeframes">1. How long delivery takes</h2>
       <p>
         These are the timeframes we work to. Delivery days are working days —
         Monday to Friday, excluding public holidays. We confirm the expected date with
