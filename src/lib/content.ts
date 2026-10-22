@@ -11,7 +11,7 @@ export const productCategories = [
     slug: "smartphones",
     name: "Smartphones",
     photo: "/products/smartphones.webp",
-    photoAlt: "Infinix and Samsung Galaxy handsets shown back to back.",
+    photoAlt: "Samsung Galaxy A series and Tecno handsets on the shop wall.",
     summary:
       "New and certified pre-owned handsets from the brands Ghanaian customers actually buy, each checked and IMEI-recorded before it leaves the counter.",
     items: [
@@ -26,7 +26,7 @@ export const productCategories = [
     slug: "accessories",
     name: "Phone Accessories",
     photo: "/products/accessories.webp",
-    photoAlt: "Wireless earphones and headphones laid out on a light surface.",
+    photoAlt: "Cases, chargers, cables and earphones on the accessory wall.",
     summary:
       "The everyday items that keep a phone working: the ones customers replace most often, stocked in depth so you rarely leave empty-handed.",
     items: [
@@ -42,7 +42,7 @@ export const productCategories = [
     slug: "tablets",
     name: "Tablets",
     photo: "/products/tablets.webp",
-    photoAlt: "A Samsung Galaxy Tab open on a desk.",
+    photoAlt: "Samsung Galaxy Tab A11 and Tab A11+ 5G boxes in the display case.",
     summary:
       "Tablets for students, traders and small businesses — available outright or on the same hire purchase terms as our phones.",
     items: [
@@ -69,27 +69,27 @@ export type PhoneBrand = {
 export const PHONE_BRANDS: PhoneBrand[] = [
   {
     name: "Samsung",
-    note: "Galaxy A and S series",
+    note: "A07, A17, A37, A57, S25, Tab A11",
     photo: "/brands/samsung.webp",
-    photoAlt: "The rear of a Samsung Galaxy S series handset.",
+    photoAlt: "Sealed Samsung Galaxy A17 handsets in our stockroom.",
   },
   {
     name: "Tecno",
-    note: "Spark, Camon, Pova",
+    note: "Spark 50, Camon 50, Camon Slim",
     photo: "/brands/tecno.webp",
-    photoAlt: "The rear of a Tecno Spark 20 Pro handset.",
+    photoAlt: "Tecno Camon 50 and Spark 50 boxes on our shelf.",
   },
   {
     name: "Infinix",
-    note: "Hot, Note, Smart",
+    note: "HOT 70, NOTE Edge, GT 50 Pro",
     photo: "/brands/infinix.webp",
-    photoAlt: "The rear of an Infinix handset.",
+    photoAlt: "Infinix HOT 70 boxes on our shelf.",
   },
   {
     name: "itel",
-    note: "Everyday budget handsets",
+    note: "it2160 and everyday handsets",
     photo: "/brands/itel.webp",
-    photoAlt: "The rear of an itel A50 handset.",
+    photoAlt: "itel it2160 handsets on our shelf.",
   },
 ];
 

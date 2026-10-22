@@ -1,27 +1,10 @@
 # Page photography
 
-These are **Aidoo Tech brand images**, taken from the hire purchase project
-(`hirepurchase/frontend/public/slider1–5.png`) and cropped for use on the site.
-They are the same source as the home page hero slides, so the imagery reads as
-one set across the site.
+These are the Aidoo Tech brand images from the hire purchase project, used on
+the About, Hire Purchase, Agents, Payments, Customer Feedback and Contact
+pages through the `ImageBand` component.
 
-| File | Used on | Shows |
-| --- | --- | --- |
-| `team.webp` | About | Staff outside the showroom |
-| `counter.webp` | Hire Purchase | Going through terms with a customer |
-| `agent.webp` | Agents | An agent registering a customer |
-| `customer-phone.webp` | Payments | A customer using his handset |
-| `customers.webp` | Customer Feedback | Customers being served at the counter |
-| `storefront.webp` | Contact | The shop front, Device Finance sign legible |
-
-## Worth knowing
-
-These look like generated marketing imagery rather than photographs of the
-real Circle premises, and some frames include an iPhone poster in the shop
-window — a brand Aidoo Tech does not sell. Neither is prominent enough to
-mislead, but both are reasons to replace these with photographs of the actual
-shop, staff and agents when they are available.
-
-To replace one, drop a file of the same name into this folder. The pages
-reference them by path through the `ImageBand` component, so nothing else
-needs changing.
+They are illustrative rather than photographs of the real premises. Genuine
+showroom photography now sits in `public/gallery/`, `public/products/` and
+`public/brands/` — replacing these with real photographs of the staff, the
+agents and the shop front is worth doing whenever those are taken.

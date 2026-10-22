@@ -50,6 +50,21 @@ logo, **#013b9a**, over cool near-white paper. The blue is reserved for the
 wordmark, links, eyebrows and primary buttons rather than spread across large
 fields. Headings are Source Serif 4, body text is Inter.
 
+## Product photography
+
+`public/gallery/`, `public/products/` and `public/brands/` hold **Aidoo Tech's
+own photographs** of the Kwabenya and Circle showrooms, taken October 2026 —
+the shelves, the display cases, the accessory wall and sealed stock. Nothing
+there is stock photography and there is no licensing to track. See
+[`public/gallery/CREDITS.md`](public/gallery/CREDITS.md).
+
+Stock turns over, so these date. Drop replacements in at the same paths — the
+components reference them by filename — and keep the model names in
+`PHONE_BRANDS` (`src/lib/content.ts`) in step with what is on the shelf.
+
+`public/photos/` and `public/hero/` still hold the older illustrative brand
+images, used on the other pages and the home hero.
+
 ## Page map
 
 | Route | Purpose |

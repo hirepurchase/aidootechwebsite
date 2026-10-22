@@ -38,11 +38,15 @@ prefer. Supply these and the exact wording can go back in:
 - **Customer reviews.** `testimonials` in `src/lib/content.ts` is empty, so the
   reviews section is hidden and the page shows only the complaints procedure.
   Add real reviews with the customer's permission — never an invented one.
-- **Photographs** of the real shop, staff, agents and stock. See
-  `public/photos/CREDITS.md` and `public/products/CREDITS.md`.
-- **An iMO handset photo.** The brand was removed from the site because no
-  licensed photograph of one exists. `public/brands/CREDITS.md` has the steps
-  to put it back.
+- ~~**Photographs** of the real shop and stock~~ — **done.** Supplied October
+  2026 and now on the Products page: the shelves, display cases, accessory wall
+  and sealed stock. Photographs of the *staff and agents* would still improve
+  the About, Agents and Contact pages, which use illustrative images.
+- **Brands not yet on the site.** The October 2026 stock photographs show
+  **Villaon** (V105, V201, V212, V5606), **Nokia** (105, 125), **Huawei** and
+  **HOMII** kids tablets on the shelves — none of which the site lists. No iMO
+  was visible. Confirm which of these are regular stock and they can be added
+  to `PHONE_BRANDS` in `src/lib/content.ts`.
 - **Social profiles.** `socials` is empty and nothing renders.
 
 ## Decisions

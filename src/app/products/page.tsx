@@ -124,15 +124,15 @@ export default function ProductsPage() {
                 <div className="overflow-hidden border border-rule">
                   <Image
                     src="/products/handsets.webp"
-                    alt="A Samsung Galaxy and an Infinix handset side by side."
-                    width={1100}
-                    height={883}
+                    alt="Inside the Aidoo Tech showroom: staff serving customers at the counter."
+                    width={1200}
+                    height={771}
                     sizes="(min-width: 1024px) 40vw, 100vw"
                     className="aspect-[5/4] w-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
                   />
                 </div>
                 <figcaption className="mt-3 text-[0.75rem] text-ink-faint">
-                  Samsung and Infinix handsets — two of the five brands we stock.
+                  Inside the showroom, on an ordinary trading day.
                 </figcaption>
               </figure>
             </div>
