@@ -193,8 +193,8 @@ export const faqGroups = [
         a: "Faulty devices are covered by our Refund & Cancellation Policy. We ask you to report a fault as soon as you notice it and bring the device with its receipt, box and accessories.",
       },
       {
-        q: "Do you deliver?",
-        a: "Yes, within the areas set out in our Delivery Policy. Devices on hire purchase are normally handed over in person once identification has been verified.",
+        q: "Do you deliver, and how long does it take?",
+        a: `Yes. Within Greater Accra, orders confirmed before ${site.delivery.cutOff} are delivered the same working day, and orders confirmed after that the next working day. Delivery to other regions takes ${site.delivery.otherRegions}. Collection at either showroom is free and the device is ready the same day. Devices on hire purchase are handed over in person once identification has been verified.`,
       },
       {
         q: "How do I reach customer support?",

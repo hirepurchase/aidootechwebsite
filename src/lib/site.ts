@@ -58,6 +58,19 @@ export const site = {
   /** Social profiles, once they exist. Nothing renders while this is empty. */
   socials: [] as { label: string; href: string }[],
 
+  /**
+   * Delivery timeframes. Stated on the delivery policy, the products page and
+   * the FAQs — keep them here so the three never drift apart, and only promise
+   * what the business can actually meet.
+   */
+  delivery: {
+    cutOff: "12 noon",
+    collection: "Ready for collection the same day",
+    greaterAccra: "Same working day for orders confirmed before 12 noon, otherwise the next working day",
+    greaterAccraShort: "Same day or next working day",
+    otherRegions: "2–4 working days",
+  },
+
   /** Payment channels accepted. Shown on the payments and policy pages. */
   payments: {
     methods: [

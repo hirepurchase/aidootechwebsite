@@ -101,6 +101,38 @@ body {
 .prose-legal strong { color: var(--ink); font-weight: 600; }
 .prose-legal a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 
+/* Tables inside the policy pages — used for the delivery timeframes. */
+.prose-legal table {
+  width: 100%;
+  margin: 0 0 1.5rem;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+.prose-legal thead th {
+  text-align: left;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  padding: 0 1rem 0.625rem 0;
+  border-bottom: 1px solid var(--rule-strong);
+}
+.prose-legal tbody td {
+  padding: 0.875rem 1rem 0.875rem 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+.prose-legal tbody td:first-child {
+  color: var(--ink);
+  font-weight: 500;
+  width: 42%;
+}
+.prose-legal thead th:last-child,
+.prose-legal tbody td:last-child {
+  padding-right: 0;
+}
+
 /* Native select chevron. Kept in CSS because the inline data URI does not
    survive Tailwind's arbitrary-value parsing. */
 .select-control {

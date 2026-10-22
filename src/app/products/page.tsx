@@ -7,7 +7,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { ProductCard } from "@/components/ProductCard";
 import { Section } from "@/components/Section";
 import { PHONE_BRANDS, productCategories } from "@/lib/content";
-import { showroomsLabel } from "@/lib/site";
+import { showroomsLabel, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   description:
@@ -21,11 +21,23 @@ export default function ProductsPage() {
         title="Phones, tablets and accessories."
         lede="Everything below is sold over the counter at our showroom and through our agents. Devices are available for cash at the marked price, or on hire purchase with a deposit and agreed instalments."
         meta={
-          <p>
-            Prices move with the market, so we quote current figures in person rather than
-            publish numbers that go out of date. Call ahead and we will confirm stock and
-            price before you travel.
-          </p>
+          <>
+            <p>
+              Prices move with the market, so we quote current figures in person rather
+              than publish numbers that go out of date. Call ahead and we will confirm
+              stock and price before you travel.
+            </p>
+            <p className="mt-2">
+              <strong className="font-medium text-ink-soft">Delivery:</strong>{" "}
+              {site.delivery.greaterAccraShort.toLowerCase()} within Greater Accra,{" "}
+              {site.delivery.otherRegions} to other regions, or collect the same day at
+              either showroom. Full detail in our{" "}
+              <Link href="/delivery" className="text-accent underline underline-offset-2">
+                Delivery Policy
+              </Link>
+              .
+            </p>
+          </>
         }
       />
 
@@ -152,6 +164,10 @@ export default function ProductsPage() {
               [
                 "Cash price first",
                 "You always see the outright price before the financed price, so the cost of credit is visible rather than buried.",
+              ],
+              [
+                "When it reaches you",
+                `Collect the same day at either showroom. Delivery within Greater Accra is ${site.delivery.greaterAccraShort.toLowerCase()}; other regions take ${site.delivery.otherRegions}.`,
               ],
             ].map(([title, body]) => (
               <div key={title} className="border-l-2 border-accent pl-5">
