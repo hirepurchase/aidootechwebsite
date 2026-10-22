@@ -63,9 +63,9 @@ export default function ProductsPage() {
       <Section
         tone="sunken"
         title="The phone brands we stock"
-        lede="Every handset is checked and its IMEI recorded before sale. Tablets are available in the same brands, on the same terms."
+        lede="Every handset is checked and its IMEI recorded before sale. We also carry Huawei handsets and HOMII tablets for children. All of them are available for cash or on hire purchase."
       >
-        <ul className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3">
           {PHONE_BRANDS.map((brand) => (
             <li
               key={brand.name}
@@ -80,7 +80,7 @@ export default function ProductsPage() {
                   src={brand.photo}
                   alt={brand.photoAlt}
                   fill
-                  sizes="(min-width: 1024px) 22vw, (min-width: 640px) 30vw, 45vw"
+                  sizes="(min-width: 640px) 30vw, 45vw"
                   className="object-cover transition-transform duration-500 ease-out group-hover/brand:scale-105"
                 />
               </div>

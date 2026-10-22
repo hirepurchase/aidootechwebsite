@@ -42,12 +42,11 @@ prefer. Supply these and the exact wording can go back in:
   2026 and now on the Products page: the shelves, display cases, accessory wall
   and sealed stock. Photographs of the *staff and agents* would still improve
   the About, Agents and Contact pages, which use illustrative images.
-- **Brands not yet on the site.** The October 2026 stock photographs show
-  **Villaon** (V105, V201, V212, V5606), **Nokia** (105, 125), **Huawei** and
-  **HOMII** kids tablets on the shelves — none of which the site lists. No iMO
-  was visible. Confirm which of these are regular stock and they can be added
-  to `PHONE_BRANDS` in `src/lib/content.ts`.
-- **Social profiles.** `socials` is empty and nothing renders.
+- ~~**Brands not yet on the site**~~ — **done.** Villaon and Nokia are now
+  listed with photographs of their own stock, Huawei is named in the
+  smartphones list, and HOMII kids tablets in the tablets list. Huawei has no
+  chip of its own because the supplied photographs show only a sliver of that
+  shelf — one clear photo and it can have one.
 
 ## Decisions
 

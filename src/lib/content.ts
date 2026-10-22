@@ -15,10 +15,13 @@ export const productCategories = [
     summary:
       "New and certified pre-owned handsets from the brands Ghanaian customers actually buy, each checked and IMEI-recorded before it leaves the counter.",
     items: [
-      "Samsung — Galaxy A series and S series",
+      "Samsung — Galaxy A series, S series",
       "Tecno",
       "Infinix",
       "itel",
+      "Villaon",
+      "Nokia",
+      "Huawei",
     ],
     financing: true,
   },
@@ -46,10 +49,10 @@ export const productCategories = [
     summary:
       "Tablets for students, traders and small businesses — available outright or on the same hire purchase terms as our phones.",
     items: [
-      "Samsung Galaxy Tab",
-      "Tecno tablets",
+      "Samsung Galaxy Tab A11 and Tab A11+ 5G",
+      "Tecno tablets, including the Megapad",
       "Infinix tablets",
-      "itel tablets",
+      "HOMII kids tablets",
     ],
     financing: true,
   },
@@ -90,6 +93,18 @@ export const PHONE_BRANDS: PhoneBrand[] = [
     note: "it2160 and everyday handsets",
     photo: "/brands/itel.webp",
     photoAlt: "itel it2160 handsets on our shelf.",
+  },
+  {
+    name: "Villaon",
+    note: "V105, V201, V212, V5606",
+    photo: "/brands/villaon.webp",
+    photoAlt: "Villaon V105, V201 and V5606 handsets on our shelf.",
+  },
+  {
+    name: "Nokia",
+    note: "105, 125 and other feature phones",
+    photo: "/brands/nokia.webp",
+    photoAlt: "Nokia 105 and 125 feature phones on our shelf.",
   },
 ];
 
